@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./SearchBar.css";
 export default class SearchBar extends Component {
   state = {
     term: "",
@@ -13,21 +14,15 @@ export default class SearchBar extends Component {
   };
   render() {
     return (
-      <div className="ui grid centered padded">
-        <div className="six wide computer twelve wide mobile column ">
-          <div className=" ui segment">
-            <form className=" ui form" onSubmit={this.onSubmitHandler}>
-              <div className="field">
-                <label>Search Image</label>
-                <input
-                  type="text"
-                  value={this.state.term}
-                  onChange={(e) => this.setState({ term: e.target.value })}
-                />
-              </div>
-            </form>
-          </div>
-        </div>
+      <div className="search-container">
+        <form onSubmit={this.onSubmitHandler}>
+          <input
+            type="text"
+            placeholder="Search here!"
+            value={this.state.term}
+            onChange={(e) => this.setState({ term: e.target.value })}
+          />
+        </form>
       </div>
     );
   }

@@ -1,0 +1,11 @@
+.header {
+  widows: 40%;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  color: rgb(202, 71, 93);
+  font-style: italic;
+  text-align: center;
+}
