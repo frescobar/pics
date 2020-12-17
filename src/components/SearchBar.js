@@ -14,11 +14,11 @@ export default class SearchBar extends Component {
   };
   render() {
     return (
-      <div className="search-container">
+      <div className='search-container'>
         <form onSubmit={this.onSubmitHandler}>
           <input
-            type="text"
-            placeholder="Search here!"
+            type='text'
+            placeholder='Escriba aqui!'
             value={this.state.term}
             onChange={(e) => this.setState({ term: e.target.value })}
           />

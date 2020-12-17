@@ -7,5 +7,5 @@ export default function ImageList({ images }) {
     return <ImageCard key={image.id} image={image} />;
   });
 
-  return <div className="image-list">{imageList}</div>;
+  return <div className='image-list'>{imageList}</div>;
 }
